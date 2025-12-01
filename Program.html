@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Room</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .Main{
+        background-image: url('Hotel.jpg');
+        background-size:1600px 790px;
+    }
+    h1{
+        color:white; text-align: center;
+        font-size: 90px; text-shadow:black 2px 4px;
+    }
+    .lower{
+        text-align:center; background-image: url('Image 1.webp');
+        background-size: 1600px 100px;
+        color: yellow;
+    }
+    .Rooms{
+        position:relative;
+        font-size:28px;
+        color:white; left:250px; top:110px;
+    }
+    .Banquet{
+       position:relative;
+        font-size:28px; 
+        color:white; left:950px;
+        bottom:180px;
+    }
+     h2{
+    color:red; font-size:40px;
+    text-shadow:violet 2px 5px;
+    }
+    </style>
+</head>
+<body><div class="Main">
+        <h1> Gahlaut Hotel</h1>
+    
+    <div class=" Rooms">
+        <form action="Room">
+            <h2 class="center">Book Your Room</h2><br>
+            <label for="Name">Name:</label>
+            <input type="text"  name="Name" placeholder="Enter Your Name" required><br>
+            <label for="Email">Email:</label>
+            <input type="email"  name="Email" placeholder="Enter Your Email" required><br>
+            <label for="Check-in">Check-in Date:</label>
+            <input type="date"  name="Check-in" required><br>
+            <label for="Check-out">Check-out Date:</label>
+            <input type="date"  name="Check-out" required><br>
+            <label for="Room-Type">Room Type:</label>
+            <select id="Room-Type" name="Room-Type" required>
+                <option value="">Select a Room Type</option>
+                <option value="Single">Single</option>
+                <option value="Double">Double</option>
+                <option value="Suite">Suite</option>
+                <option value="Deluxe">Deluxe</option>
+            </select><br><br>
+            <button type="submit">Book Now</button>
+        </form></div>
+        <div class="Banquet">
+            <form action="Hall">
+                <h2 class="center">Book Banquet Hall</h2><br>
+                <label for="Name">Name:</label>
+                <input type="text" name="Name" placeholder="Enter Your Name" required><br>
+                <label for="Email">Email:</label>
+                <input type="email"  name="Email" placeholder="Enter Your Email" required><br>
+                <label for="Event-Date">Event Date:</label>
+                <input type="date"  name="Event-Date" required><br>
+                <label for="Number-of-Guests">Number of Guests:</label>
+                <input type="number"  name="Number-of-Guests" placeholder="Enter Number of Guests" required><br>
+                <button type="submit">Book Now</button>
+            </form></div>
+            <h1>Thanks For Visiting</h1></div>
+</body>
+</html>
+    
